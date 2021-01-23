@@ -1,3 +1,3 @@
-# algorithms
+# Algorithms
 ## Sorting Algorithms
 ## Bubble Sort
