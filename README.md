@@ -1,4 +1,4 @@
 # Algorithms
 ## Sorting Algorithms
 * ## Bubble Sort
-  file:/home/murilo/Área%20de%20Trabalho/Estudos/algorithms/Sorted/bubble_sort.gif
+![bubble_sort](https://user-images.githubusercontent.com/28688721/105616104-181cc580-5db3-11eb-95e9-5ae0df7a1e5f.gif)
