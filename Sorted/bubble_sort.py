@@ -1,5 +1,6 @@
 from random import randint
 import matplotlib.pyplot as plt
+import imageio
 
 
 def bubble_sort(array, lenght):
@@ -28,7 +29,14 @@ def show(list_numbers, lenght):
         plt.title("Bubble Sort swap = " + str(index))
         plt.bar(range(lenght), list_numbers[index])
         plt.pause(0.0001)
+        plt.savefig('img' + str(index) + '.png')
     plt.show()
+
+def build_gif(list_numbers):
+    with imageio.get_writer('bubble_sort.gif', mode='I') as writer:
+        for filename in range(len(list_numbers)):
+            image = imageio.imread(f'img{filename}.png')
+            writer.append_data(image)
 
 
 if __name__ == '__main__':
@@ -36,6 +44,6 @@ if __name__ == '__main__':
         array = generate_numbers(lenght)
         list_numbers = bubble_sort(array, lenght)
         show(list_numbers, lenght)
-
+        build_gif(list_numbers)
 
     main(25)
